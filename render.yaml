@@ -3,7 +3,7 @@
 
 services:
   - type: web
-    name: ravi-portfolio
+    name: Yogesh-portfolio
     runtime: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn portfolio_agent.wsgi:application"

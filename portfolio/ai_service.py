@@ -18,58 +18,49 @@ Keep answers concise and friendly.
 - Phone: +353 87 492 5777
 
 **Education:**
-1. MSc Information Systems with Computing (Apr 2024 – Feb 2026)
-   - Dublin Business School (DBS)
-   - Focus: AI Ethics, Language Models, Interactive Dashboards, Quantitative Data Analysis
+1. MSc in Information Systems with Computing (Apr 2024 – Feb 2026)
+   - Dublin Business School (DBS), Ireland
+   - Graduating this month (February 2026)
 
 2. Bachelor of Technology in Information Technology (Aug 2019 – Feb 2023)
    - SVKM Institute of Technology, India
-   - Focus: Data Structures, OOP (Java/Python), Software Engineering
 
 **Work Experience:**
-1. Full-Stack Software Engineer  @ Tata Communication (Oct 2022 – Sep 2025)
-   -  Built TypeScript + Node.js backend with custom Dialogflow chatbot modules, improving chatbot response efficiency 
-by 50%. 
-   - Automated Google Sheets → Firebase data pipelines using Cloud Functions, eliminating 60% of manual data entry 
-effort. 
-   - Integrated Agent Assist for voice virtual agents, cutting customer response times by 15%. 
+1. Full-Stack Software Engineer @ Tata Communications (Oct 2022 – Sep 2025)
+   - Built TypeScript + Node.js backend with custom Dialogflow chatbot modules, improving chatbot response efficiency by 50%.
+   - Automated Google Sheets → Firebase data pipelines using Cloud Functions, eliminating 60% of manual data entry effort.
+   - Developed cloud-based APIs delivering rich responses in Google Chat, increasing user engagement by 30%.
+   - Integrated Agent Assist for voice virtual agents, cutting customer response times by 15%.
+   - Delivered features across Agile Scrum sprints, managing tasks in Jira with consistent on-time delivery.
 
-2. Software Engineer (Intern) @  Tata Elxsi  (Dec 2021 – Sep 2022)
-   - Designed and implemented RESTful APIs for authentication, feedback, and issue reporting, achieving 99% uptime. 
-   - Optimised middleware layer, reducing API response times by 35% under high-traffic conditions. 
-
-3. Business Development Associate @ EduGorilla Community (Sep 2023 – May 2024)
-   - Exceeded 2x monthly sales targets three times
-   - Used CRM pipeline tracking
+2. Software Engineer (Intern) @ Tata Elxsi (Dec 2021 – Sep 2022)
+   - Designed and implemented RESTful APIs for authentication, feedback, and issue reporting, achieving 99% uptime.
+   - Optimised middleware layer, reducing API response times by 35% under high-traffic conditions.
+   - Implemented Role-Based Access Control (RBAC), strengthening security and access compliance.
+   - Built a React.js IoT dashboard for Tata Motors, reducing mean time to resolve production issues by 41%.
 
 **Projects:**
-1. Climate Migration Detection (Research Project)
-   - Under Prof. Elisa D'Amico
-   - Validating signals of climate-induced migration
-   - Tech: Python, Geospatial Data (Meta/Google Mobility), NLP (GDELT/ReliefWeb), GeoPandas
+1. CAReader-AI
+   - Full-stack web app with TypeScript + Node.js backend, AI-powered chatbot, REST APIs, JWT authentication, and React/Next.js frontend.
+   - Reduced user search time by 50%.
 
-2. Hindi Chatbot with Sentiment Analysis (NLP)
-   - Emotion detection in Hindi text
-   - Tech: Python, Django, RAG, OpenAI API, Discourse Relations algorithms
-
-3. Intelligent Context Compression Engine for LLMs
-   - Reduced LLM API costs by 60% while maintaining 92% answer quality
-   - Tech: Random Forest Classifier, Semantic Compression, Scikit-learn
-
-**Publications:**
-- "Enhancing Well-Being Through Computational Emotion Analysis in Hindi Language Texts" (Springer)
+2. Detecting-Humans-in-Fire
+   - Python-based image recognition system for fire emergency detection using FastAPI + TensorFlow.
+   - Delivers real-time predictions via a REST API.
 
 **Technical Skills:**
-- Languages: Python, SQL, Java
-- AI/ML: NLP, RAG, Scikit-learn, Random Forest, Sentiment Analysis
-- Data: Pandas, GeoPandas, Matplotlib, Seaborn
-- Web: Django, REST APIs, Git
+- Backend & APIs: TypeScript, Node.js, Express.js, REST APIs, JWT, RBAC, Middleware, MVC
+- Frontend: React.js, Next.js, HTML5, CSS3
+- AI / Automation: Python, FastAPI, TensorFlow, Dialogflow
+- Databases: PostgreSQL, MySQL, MongoDB
+- Cloud & DevOps: AWS (EC2, S3), Docker, CI/CD
+- Tools: Git/GitHub, Jira, Scrum/Kanban
 """
 
 
 def get_ai_response(user_question: str) -> str:
     """
-    Get an AI-generated response to a user question about Ravi's portfolio.
+    Get an AI-generated response to a user question about Yogesh's portfolio.
     Returns the response text or an error message.
     """
     api_key = getattr(settings, 'OPENAI_API_KEY', None) or os.environ.get('OPENAI_API_KEY')

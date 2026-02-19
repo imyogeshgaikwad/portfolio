@@ -3,7 +3,7 @@ from portfolio.models import PortfolioItem
 
 
 class Command(BaseCommand):
-    help = 'Seed the database with Ravi Rastogi portfolio data'
+    help = 'Seed the database with Yogesh Gaikwad portfolio data'
 
     def handle(self, *args, **options):
         # Clear existing data
@@ -14,45 +14,40 @@ class Command(BaseCommand):
             # Profile
             {
                 'category': 'profile',
-                'title': 'Ravi Rastogi',
-                'subtitle': 'AI/ML Engineer & Full-Stack Developer',
+                'title': 'Yogesh Gaikwad',
+                'subtitle': 'Full-Stack Engineer',
                 'description': '''
                     <p class="mb-2">📍 Dublin, Ireland</p>
-                    <p class="mb-2">📧 itsravirastogi@gmail.com</p>
-                    <p class="mb-2">📱 +353 89 956 4137</p>
-                    
+                    <p class="mb-2">📧 imyogeshgaikwad@gmail.com</p>
+                    <p class="mb-2">📱 +353 87 492 5777</p>
+                    <p class="mb-2">🛂 Stamp 1G — Available Immediately</p>
+
                     <p class="mt-4 leading-relaxed">
-                        AI/ML Engineer pursuing a Master's in Information Systems, specializing in NLP, Data Analytics, and Agentic AI. 
-                        Experienced in building production ML systems, language models, and data-driven solutions. 
-                        Combines technical expertise with business acumen to deliver impactful results. 
-                        Passionate about using AI to solve real-world problems ethically and effectively.
+                        Full-Stack Engineer with 3 years of commercial experience in TypeScript, Node.js, and React.
+                        Built and shipped backend systems and APIs that cut operational effort by 60% and improved
+                        system reliability by 41%. Comfortable working in Agile teams, shipping features end-to-end,
+                        and picking up new tech fast.
                     </p>
                 ''',
                 'order': 1,
             },
-            
+
             # Education
             {
                 'category': 'education',
-                'title': 'MSc Information Systems',
-                'subtitle': 'University College Dublin (UCD)',
+                'title': 'MSc in Information Systems with Computing',
+                'subtitle': 'Dublin Business School (DBS), Ireland',
                 'description': '''
-                    <p class="mb-2"><strong>Focus Areas:</strong></p>
-                    <ul class="list-disc list-inside space-y-1">
-                        <li>AI Ethics</li>
-                        <li>Language Models</li>
-                        <li>Interactive Dashboards</li>
-                        <li>Quantitative Data Analysis</li>
-                    </ul>
+                    <p class="mb-2">Graduating February 2026.</p>
                 ''',
-                'date_start': 'Sep 2025',
-                'date_end': 'Sep 2026',
+                'date_start': 'Apr 2024',
+                'date_end': 'Feb 2026',
                 'order': 1,
             },
             {
                 'category': 'education',
-                'title': 'Bachelor of Computer Applications',
-                'subtitle': 'Amity University, Lucknow',
+                'title': 'Bachelor of Technology in Information Technology',
+                'subtitle': 'SVKM Institute of Technology, India',
                 'description': '''
                     <p class="mb-2"><strong>Focus Areas:</strong></p>
                     <ul class="list-disc list-inside space-y-1">
@@ -61,174 +56,166 @@ class Command(BaseCommand):
                         <li>Software Engineering</li>
                     </ul>
                 ''',
-                'date_start': 'Sep 2020',
-                'date_end': 'Sep 2023',
+                'date_start': 'Aug 2019',
+                'date_end': 'Feb 2023',
                 'order': 2,
             },
-            
+
             # Experience
             {
                 'category': 'experience',
-                'title': 'Strategy and Operations Manager',
-                'subtitle': 'EduAbroad (Chaos Consulting)',
+                'title': 'Full-Stack Software Engineer',
+                'subtitle': 'Tata Communications',
                 'description': '''
-                    <p class="mb-3"><strong>Key Achievement:</strong></p>
-                    <p>Increased student inquiries by <span class="text-green-400 font-bold">20%</span> and reduced 
-                    manual reporting time by <span class="text-green-400 font-bold">30%</span> using automation 
-                    tools like Trello and Zoho.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Built TypeScript + Node.js backend with custom Dialogflow chatbot modules, improving chatbot response efficiency by <span class="text-green-400 font-bold">50%</span>.</li>
+                        <li>Automated Google Sheets → Firebase data pipelines using Cloud Functions, eliminating <span class="text-green-400 font-bold">60%</span> of manual data entry effort.</li>
+                        <li>Developed cloud-based APIs delivering rich responses in Google Chat, increasing user engagement by <span class="text-blue-400 font-bold">30%</span>.</li>
+                        <li>Integrated Agent Assist for voice virtual agents, cutting customer response times by <span class="text-green-400 font-bold">15%</span>.</li>
+                        <li>Delivered features across Agile Scrum sprints, managing tasks in Jira with consistent on-time delivery.</li>
+                    </ul>
                 ''',
-                'date_start': 'Nov 2024',
-                'date_end': 'Jun 2025',
-                'technologies': 'Trello, Zoho, Automation, Strategy',
+                'date_start': 'Oct 2022',
+                'date_end': 'Sep 2025',
+                'technologies': 'TypeScript, Node.js, Dialogflow, Firebase, Cloud Functions, Google Chat API, Jira, Scrum',
                 'order': 1,
             },
             {
                 'category': 'experience',
-                'title': 'Associate Team Leader',
-                'subtitle': 'EduGorilla Community',
+                'title': 'Software Engineer (Intern)',
+                'subtitle': 'Tata Elxsi',
                 'description': '''
-                    <p class="mb-3"><strong>Key Achievement:</strong></p>
-                    <p>Mentored <span class="text-blue-400 font-bold">4 BDAs</span> and achieved 
-                    <span class="text-green-400 font-bold">2x team sales targets</span> twice.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Designed and implemented RESTful APIs for authentication, feedback, and issue reporting, achieving <span class="text-green-400 font-bold">99% uptime</span>.</li>
+                        <li>Optimised middleware layer, reducing API response times by <span class="text-green-400 font-bold">35%</span> under high-traffic conditions.</li>
+                        <li>Implemented Role-Based Access Control (RBAC), strengthening security and access compliance.</li>
+                        <li>Built a React.js IoT dashboard for Tata Motors, reducing mean time to resolve production issues by <span class="text-blue-400 font-bold">41%</span>.</li>
+                    </ul>
                 ''',
-                'date_start': 'Jun 2024',
-                'date_end': 'Oct 2024',
-                'technologies': 'Leadership, Sales, Mentoring',
+                'date_start': 'Dec 2021',
+                'date_end': 'Sep 2022',
+                'technologies': 'REST APIs, Node.js, RBAC, Middleware, React.js, IoT',
                 'order': 2,
             },
-            {
-                'category': 'experience',
-                'title': 'Business Development Associate',
-                'subtitle': 'EduGorilla Community',
-                'description': '''
-                    <p class="mb-3"><strong>Key Achievement:</strong></p>
-                    <p>Consistently exceeded sales targets (<span class="text-green-400 font-bold">2x monthly 
-                    targets thrice</span>) using CRM pipeline tracking.</p>
-                ''',
-                'date_start': 'Sep 2023',
-                'date_end': 'May 2024',
-                'technologies': 'CRM, Sales, Pipeline Management',
-                'order': 3,
-            },
-            
+
             # Projects
             {
                 'category': 'project',
-                'title': 'Climate Migration Detection',
-                'subtitle': 'Research Project under Prof. Elisa D\'Amico',
+                'title': 'CAReader-AI',
+                'subtitle': 'Full-Stack AI Web Application',
                 'description': '''
-                    <p class="mb-3">Pilot project validating signals of <strong>climate-induced migration</strong> 
-                    using geospatial and NLP analysis.</p>
-                    <p class="text-gray-400 text-sm">Analyzing Meta/Google Mobility data combined with GDELT/ReliefWeb 
-                    news sources to detect climate migration patterns.</p>
+                    <p class="mb-3">Full-stack web app with a <strong>TypeScript + Node.js</strong> backend,
+                    AI-powered chatbot, REST APIs, JWT authentication, and a React/Next.js frontend.</p>
+                    <p class="text-gray-400 text-sm">Reduced user search time by
+                    <span class="text-green-400 font-bold">50%</span>.</p>
+                    <p class="mt-3">
+                        <a href="https://github.com/imyogeshgaikwad" target="_blank"
+                           class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
+                    </p>
                 ''',
-                'technologies': 'Python, Geospatial Data, NLP, GDELT, ReliefWeb, GeoPandas',
+                'technologies': 'TypeScript, Node.js, React.js, Next.js, REST APIs, JWT, AI Chatbot',
                 'order': 1,
             },
             {
                 'category': 'project',
-                'title': 'Hindi Chatbot with Sentiment Analysis',
-                'subtitle': 'NLP Research Project',
+                'title': 'Detecting-Humans-in-Fire',
+                'subtitle': 'Python AI Safety System',
                 'description': '''
-                    <p class="mb-3">Developed a chatbot for <strong>emotion detection in Hindi text</strong> 
-                    using RAG architecture and OpenAI API.</p>
-                    <p class="text-gray-400 text-sm">Implements Discourse Relations algorithms for improved 
-                    contextual understanding.</p>
+                    <p class="mb-3">Python-based <strong>image recognition system</strong> for fire emergency
+                    detection using FastAPI and TensorFlow, delivering real-time predictions via a REST API.</p>
+                    <p class="mt-3">
+                        <a href="https://github.com/imyogeshgaikwad" target="_blank"
+                           class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
+                    </p>
                 ''',
-                'technologies': 'Python, Django, RAG, OpenAI API, NLP, Sentiment Analysis',
+                'technologies': 'Python, FastAPI, TensorFlow, REST API, Image Recognition',
                 'order': 2,
             },
-            {
-                'category': 'project',
-                'title': 'Intelligent Context Compression Engine for LLMs',
-                'subtitle': 'Cost Optimization System',
-                'description': '''
-                    <p class="mb-3">System that reduced LLM API costs by <span class="text-green-400 font-bold">60%</span> 
-                    while maintaining <span class="text-blue-400 font-bold">92% answer quality</span>.</p>
-                    <p class="text-gray-400 text-sm">Uses Random Forest Classifier with Semantic Compression 
-                    techniques.</p>
-                ''',
-                'technologies': 'Python, Random Forest, Scikit-learn, Semantic Compression, ML',
-                'order': 3,
-            },
-            
-            # Publications
-            {
-                'category': 'publication',
-                'title': 'Enhancing Well-Being Through Computational Emotion Analysis in Hindi Language Texts',
-                'subtitle': 'Springer Publication',
-                'description': '''
-                    <p class="mb-3">Published research on computational methods for analyzing emotional content 
-                    in Hindi language texts to enhance well-being applications.</p>
-                    <p class="text-blue-400">📚 Published in Springer</p>
-                ''',
-                'technologies': 'NLP, Sentiment Analysis, Hindi, Research',
-                'order': 1,
-            },
-            
+
             # Skills
             {
                 'category': 'skill',
-                'title': 'Programming Languages',
-                'subtitle': 'Core Technical Skills',
+                'title': 'Backend & APIs',
+                'subtitle': 'Core Server-Side Stack',
                 'description': '''
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Python</span>
-                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">SQL</span>
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Java</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">TypeScript</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Node.js</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Express.js</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">REST APIs</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">JWT</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">RBAC</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Middleware</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">MVC</span>
                     </div>
                 ''',
-                'technologies': 'Python, SQL, Java',
+                'technologies': 'TypeScript, Node.js, Express.js, REST APIs, JWT, RBAC, Middleware, MVC',
                 'order': 1,
             },
             {
                 'category': 'skill',
-                'title': 'AI & Machine Learning',
-                'subtitle': 'Specialization Areas',
+                'title': 'Frontend',
+                'subtitle': 'UI & Web Technologies',
                 'description': '''
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">NLP</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">RAG</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Scikit-learn</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Random Forest</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Sentiment Analysis</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">React.js</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Next.js</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">HTML5</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">CSS3</span>
                     </div>
                 ''',
-                'technologies': 'NLP, RAG, Scikit-learn, Random Forest, Sentiment Analysis',
+                'technologies': 'React.js, Next.js, HTML5, CSS3',
                 'order': 2,
             },
             {
                 'category': 'skill',
-                'title': 'Data Science & Visualization',
-                'subtitle': 'Analytics Tools',
+                'title': 'AI & Automation',
+                'subtitle': 'Machine Learning & Bots',
                 'description': '''
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-green-600/30 rounded-full text-green-300">Pandas</span>
-                        <span class="px-3 py-1 bg-green-600/30 rounded-full text-green-300">GeoPandas</span>
-                        <span class="px-3 py-1 bg-green-600/30 rounded-full text-green-300">Matplotlib</span>
-                        <span class="px-3 py-1 bg-green-600/30 rounded-full text-green-300">Seaborn</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Python</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">FastAPI</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">TensorFlow</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Dialogflow</span>
                     </div>
                 ''',
-                'technologies': 'Pandas, GeoPandas, Matplotlib, Seaborn',
+                'technologies': 'Python, FastAPI, TensorFlow, Dialogflow',
                 'order': 3,
             },
             {
                 'category': 'skill',
-                'title': 'Web Development',
-                'subtitle': 'Frameworks & Tools',
+                'title': 'Databases',
+                'subtitle': 'Data Storage',
                 'description': '''
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Django</span>
-                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">REST APIs</span>
-                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Git</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">MySQL</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">MongoDB</span>
                     </div>
                 ''',
-                'technologies': 'Django, APIs, Git',
+                'technologies': 'PostgreSQL, MySQL, MongoDB',
                 'order': 4,
+            },
+            {
+                'category': 'skill',
+                'title': 'Cloud & DevOps',
+                'subtitle': 'Infrastructure & Tooling',
+                'description': '''
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">AWS (EC2, S3)</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Docker</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">CI/CD</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Git/GitHub</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Jira</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Scrum/Kanban</span>
+                    </div>
+                ''',
+                'technologies': 'AWS, Docker, CI/CD, Git/GitHub, Jira, Scrum, Kanban',
+                'order': 5,
             },
         ]
 
         for item_data in items:
             PortfolioItem.objects.create(**item_data)
-        
+
         self.stdout.write(self.style.SUCCESS(f'Successfully seeded {len(items)} portfolio items!'))

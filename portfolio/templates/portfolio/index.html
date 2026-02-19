@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi Rastogi | AI Agent Portfolio</title>
+    <title>Yogesh Gaikwad | Full-Stack Developer Portfolio</title>
     <meta name="description"
-        content="Interactive AI-powered portfolio of Ravi Rastogi - AI/ML Engineer & Full-Stack Developer based in Dublin, Ireland, specializing in NLP, Climate Research, and Data Science.">
+        content="Interactive AI-powered portfolio of Yogesh Gaikwad - Full-Stack Engineer based in Dublin, Ireland, specializing in TypeScript, Node.js, React, and AI/Automation.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -649,7 +649,6 @@
                 width: 100%;
                 justify-content: center;
                 flex-direction: column;
-                /* Stack image and text */
                 text-align: center;
             }
 
@@ -661,11 +660,9 @@
 
             .profile-photo {
                 width: 140px;
-                /* Even bigger image */
                 height: 140px;
                 margin-bottom: 0.75rem;
                 border-radius: 24px;
-                /* Add spacing below image */
             }
 
             .header-title {
@@ -773,7 +770,7 @@
     <!-- Photo Modal -->
     <div class="photo-modal" id="photoModal" onclick="closePhotoModal()">
         <button class="modal-close" onclick="closePhotoModal()">&times;</button>
-        <img src="{% static 'images/profile.png' %}" alt="Ravi Rastogi">
+        <img src="{% static 'images/profile.png' %}" alt="Yogesh Gaikwad">
     </div>
 
     <div class="chat-container">
@@ -782,7 +779,7 @@
             <div class="header-content">
                 <div class="header-left">
                     <div class="profile-photo" onclick="openPhotoModal()">
-                        <img src="{% static 'images/profile.png' %}" alt="Ravi Rastogi">
+                        <img src="{% static 'images/profile.png' %}" alt="Yogesh Gaikwad">
                     </div>
                     <div>
                         <h1 class="header-title text-xl font-bold font-mono">Yogesh Gaikwad</h1>
@@ -932,7 +929,7 @@
             const messageDiv = document.createElement('div');
             messageDiv.className = 'message message-agent';
             messageDiv.innerHTML = `
-                <div class="avatar">R</div>
+                <div class="avatar">YG</div>
                 <div class="bubble bubble-agent">
                     ${isHTML ? content : `<p>${content}</p>`}
                 </div>
@@ -960,7 +957,7 @@
             typingDiv.className = 'message message-agent';
             typingDiv.id = 'typingIndicator';
             typingDiv.innerHTML = `
-                <div class="avatar">R</div>
+                <div class="avatar">YG</div>
                 <div class="bubble bubble-agent">
                     <div class="typing-indicator">
                         <div class="typing-dot"></div>
@@ -1037,7 +1034,7 @@
                 addAgentMessage(data.html, true, false); // No auto-scroll
             }
 
-            // Add subtle hint if not the last section (no buttons for auto-scroll)
+            // Add subtle hint if not the last section
             if (currentRevealIndex < revealSequence.length - 1) {
                 await new Promise(resolve => setTimeout(resolve, 500));
                 addAgentMessage('<p class="text-sm font-bold text-purple-400">⬇️ Keep scrolling for more... or simply ask anything on chat</p>', true, false);
@@ -1062,16 +1059,14 @@
 
             // Check scroll direction and magnitude - only trigger on significant scroll DOWN
             if (e && e.type === 'wheel') {
-                // Require a minimum scroll delta to avoid accidental triggers (reduced for smoother feel)
+                // Require a minimum scroll delta to avoid accidental triggers
                 if (e.deltaY < 20) return;
             }
-            // Also allow undefined 'e' (from touch handler)
             else if (e !== undefined) {
                 return;
             }
 
             // Trigger when user is getting close to bottom (within 500px for easier triggering)
-            // This creates a smoother "infinite scroll" feel
             const scrollPosition = window.innerHeight + window.scrollY;
             const documentHeight = document.documentElement.scrollHeight;
 
@@ -1081,7 +1076,7 @@
             initialScrollCount++;
             if (initialScrollCount < 2) return; // Require 2 intentional down-scrolls to start
 
-            // Set cooldown - faster for smoother experience
+            // Set cooldown
             scrollCooldown = true;
             const cooldownTime = currentRevealIndex === -1 ? 400 : 600;
             setTimeout(() => { scrollCooldown = false; }, cooldownTime);
@@ -1109,20 +1104,19 @@
                 if (data.success) {
                     addAgentMessage(data.html, true);
 
-                    // If the query matches one of our sequence items, sync the scroll state!
+                    // If the query matches one of our sequence items, sync the scroll state
                     const lowerQuery = query.toLowerCase();
                     const sequenceIndex = revealSequence.findIndex(item => lowerQuery.includes(item.query));
 
                     if (sequenceIndex !== -1) {
                         currentRevealIndex = sequenceIndex;
                         hasClicked = false; // Re-enable scroll reveal!
-                        initialScrollCount = 10; // Bypass initial scroll count check to allow immediate scrolling
-                        scrollCooldown = false; // Reset cooldown to allow immediate scrolling
+                        initialScrollCount = 10; // Bypass initial scroll count check
+                        scrollCooldown = false; // Reset cooldown
 
-                        // Add navigation buttons for all other sections (not just upcoming)
+                        // Add navigation buttons for all other sections
                         if (currentRevealIndex < revealSequence.length - 1) {
                             setTimeout(() => {
-                                // Get ALL sections except the current one
                                 const allOtherSections = revealSequence.filter((section, index) => index !== currentRevealIndex);
                                 const buttonChips = allOtherSections.map(section =>
                                     `<button class="chip" data-query="${section.query}">${section.intro.split(' ')[0]} ${section.query.charAt(0).toUpperCase() + section.query.slice(1)}</button>`
@@ -1136,7 +1130,7 @@
                         }
                     }
                 } else {
-                    addAgentMessage("I'm sorry, I didn't understand that. Try clicking one of the topic buttons or ask about my skills, projects, or experience.");
+                    addAgentMessage("I'm sorry, I didn't understand that. Try clicking one of the topic buttons or ask about Yogesh's skills, projects, or experience.");
                 }
             } catch (error) {
                 removeTypingIndicator();
@@ -1170,8 +1164,6 @@
             if (e.target.classList.contains('chip')) {
                 const query = e.target.dataset.query;
 
-                // Only set hasClicked if this is NOT a sequence query
-                // This allows the scroll tour to continue after clicking sequence items
                 const isSequenceQuery = revealSequence.some(item => query.toLowerCase().includes(item.query));
                 if (!isSequenceQuery) {
                     hasClicked = true;
@@ -1181,7 +1173,7 @@
             }
         });
 
-        // Wheel listener for progressive reveal (only wheel, not scroll)
+        // Wheel listener for progressive reveal
         document.addEventListener('wheel', handleScroll, { passive: true });
 
         // Touch support for mobile

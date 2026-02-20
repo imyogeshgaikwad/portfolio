@@ -32,34 +32,43 @@ class Command(BaseCommand):
                 'order': 1,
             },
 
-            # Education
-            {
-                'category': 'education',
-                'title': 'MSc in Information Systems with Computing',
-                'subtitle': 'Dublin Business School (DBS), Ireland',
-                'description': '''
-                    <p class="mb-2">Graduating February 2026.</p>
-                ''',
-                'date_start': 'Apr 2024',
-                'date_end': 'Feb 2026',
-                'order': 1,
-            },
-            {
-                'category': 'education',
-                'title': 'Bachelor of Technology in Information Technology',
-                'subtitle': 'SVKM Institute of Technology, India',
-                'description': '''
-                    <p class="mb-2"><strong>Focus Areas:</strong></p>
-                    <ul class="list-disc list-inside space-y-1">
-                        <li>Data Structures</li>
-                        <li>Object-Oriented Programming (Java/Python)</li>
-                        <li>Software Engineering</li>
-                    </ul>
-                ''',
-                'date_start': 'Aug 2019',
-                'date_end': 'Feb 2023',
-                'order': 2,
-            },
+          # Education
+{
+    'category': 'education',
+    'title': 'MSc in Information Systems with Computing',
+    'subtitle': 'Dublin Business School (DBS), Ireland',
+    'description': '''
+        <p class="mb-2">Graduating February 2026.</p>
+        <p class="mb-2"><strong>Focus Areas:</strong></p>
+        <ul class="list-disc list-inside space-y-1">
+            <li>Information Systems Design & Architecture</li>
+            <li>Full-Stack Web Development </li>
+            <li>Data Analysis & Business Intelligence</li>
+            <li>Automation & Process Optimization</li>
+            <li>Cloud Computing & Deployment</li>
+            <li>AI Integration & Applied Machine Learning</li>
+        </ul>
+    ''',
+    'date_start': 'Apr 2024',
+    'date_end': 'Feb 2026',
+    'order': 1,
+},
+{
+    'category': 'education',
+    'title': 'Bachelor of Technology in Information Technology',
+    'subtitle': 'SVKM Institute of Technology, India',
+    'description': '''
+        <p class="mb-2"><strong>Focus Areas:</strong></p>
+        <ul class="list-disc list-inside space-y-1">
+            <li>Data Structures & Algorithms</li>
+            <li>Object-Oriented Programming (Java & Python)</li>
+            <li>Software Engineering Principles</li>
+        </ul>
+    ''',
+    'date_start': 'Aug 2019',
+    'date_end': 'Feb 2023',
+    'order': 2,
+},
 
             # Experience
             {
@@ -76,8 +85,8 @@ class Command(BaseCommand):
                     </ul>
                 ''',
                 'date_start': 'Oct 2022',
-                'date_end': 'Sep 2025',
-                'technologies': 'TypeScript, Node.js, Dialogflow, Firebase, Cloud Functions, Google Chat API, Jira, Scrum',
+                'date_end': 'Apr 2024',
+                'technologies': 'TypeScript, Node.js, React.js, Dialogflow, Firebase, Cloud Functions, Google Chat API, Jira, Scrum',
                 'order': 1,
             },
             {
@@ -109,7 +118,7 @@ class Command(BaseCommand):
                     <p class="text-gray-400 text-sm">Reduced user search time by
                     <span class="text-green-400 font-bold">50%</span>.</p>
                     <p class="mt-3">
-                        <a href="https://github.com/imyogeshgaikwad" target="_blank"
+                        <a href="https://github.com/imyogeshgaikwad/CAReader-Ai" target="_blank"
                            class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
                     </p>
                 ''',
@@ -124,7 +133,7 @@ class Command(BaseCommand):
                     <p class="mb-3">Python-based <strong>image recognition system</strong> for fire emergency
                     detection using FastAPI and TensorFlow, delivering real-time predictions via a REST API.</p>
                     <p class="mt-3">
-                        <a href="https://github.com/imyogeshgaikwad" target="_blank"
+                        <a href="https://github.com/imyogeshgaikwad/Detecting-Humans-In-Fire" target="_blank"
                            class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
                     </p>
                 ''',

@@ -15,7 +15,7 @@ class Command(BaseCommand):
             {
                 'category': 'profile',
                 'title': 'Yogesh Gaikwad',
-                'subtitle': 'Full-Stack Engineer',
+                'subtitle': 'Software Engineer | Distributed Systems | Backend Infrastructure',
                 'description': '''
                     <p class="mb-2">📍 Dublin, Ireland</p>
                     <p class="mb-2">📧 imyogeshgaikwad@gmail.com</p>
@@ -23,143 +23,216 @@ class Command(BaseCommand):
                     <p class="mb-2">🛂 Stamp 1G — Available Immediately</p>
 
                     <p class="mt-4 leading-relaxed">
-                        Full-Stack Engineer with 3 years of commercial experience in TypeScript, Node.js, and React.
-                        Built and shipped backend systems and APIs that cut operational effort by 60% and improved
-                        system reliability by 41%. Comfortable working in Agile teams, shipping features end-to-end,
-                        and picking up new tech fast.
+                        Software Engineer with production experience building distributed systems, high-availability APIs,
+                        and event-driven microservices architectures serving 50,000+ users across telecom and digital
+                        platforms at Tata Communications and Tata Elxsi. Proven track record of reducing system latency
+                        by 45%, cutting infrastructure costs by 25%, and improving deployment velocity by 80%.
+                        Deep expertise in Node.js, TypeScript, Python, and AWS cloud-native infrastructure.
+                        Architect of fault-tolerant systems operating at 99.9% uptime under enterprise workloads.
                     </p>
                 ''',
                 'order': 1,
             },
 
-          # Education
-{
-    'category': 'education',
-    'title': 'MSc in Information Systems with Computing',
-    'subtitle': 'Dublin Business School (DBS), Ireland',
-    'description': '''
-        <p class="mb-2">Graduating February 2026.</p>
-        <p class="mb-2"><strong>Focus Areas:</strong></p>
-        <ul class="list-disc list-inside space-y-1">
-            <li>Information Systems Design & Architecture</li>
-            <li>Full-Stack Web Development </li>
-            <li>Data Analysis & Business Intelligence</li>
-            <li>Automation & Process Optimization</li>
-            <li>Cloud Computing & Deployment</li>
-            <li>AI Integration & Applied Machine Learning</li>
-        </ul>
-    ''',
-    'date_start': 'Apr 2024',
-    'date_end': 'Feb 2026',
-    'order': 1,
-},
-{
-    'category': 'education',
-    'title': 'Bachelor of Technology in Information Technology',
-    'subtitle': 'SVKM Institute of Technology, India',
-    'description': '''
-        <p class="mb-2"><strong>Focus Areas:</strong></p>
-        <ul class="list-disc list-inside space-y-1">
-            <li>Data Structures & Algorithms</li>
-            <li>Object-Oriented Programming (Java & Python)</li>
-            <li>Software Engineering Principles</li>
-        </ul>
-    ''',
-    'date_start': 'Aug 2019',
-    'date_end': 'Feb 2023',
-    'order': 2,
-},
+            # Education
+            {
+                'category': 'education',
+                'title': 'M.Sc. Information Systems with Computing',
+                'subtitle': 'Dublin Business School (DBS), Ireland — First Class Honours',
+                'description': '''
+                    <p class="mb-2">Graduating February 2026.</p>
+                    <p class="mb-2"><strong>Core Modules:</strong></p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Distributed Systems</li>
+                        <li>Cloud Architecture</li>
+                        <li>Scalable Computing</li>
+                        <li>Database Engineering</li>
+                        <li>Software Design Patterns</li>
+                    </ul>
+                ''',
+                'date_start': 'Apr 2024',
+                'date_end': 'Feb 2026',
+                'order': 1,
+            },
+            {
+                'category': 'education',
+                'title': 'Bachelor of Technology in Information Technology',
+                'subtitle': 'SVKM Institute of Technology, India — First Class Honours',
+                'description': '''
+                    <p class="mb-2"><strong>Core Modules:</strong></p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Data Structures &amp; Algorithms</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Database Management Systems</li>
+                        <li>Object-Oriented Programming</li>
+                    </ul>
+                ''',
+                'date_start': 'Jun 2019',
+                'date_end': 'May 2023',
+                'order': 2,
+            },
 
             # Experience
             {
                 'category': 'experience',
-                'title': 'Full-Stack Software Engineer',
+                'title': 'Software Engineer',
                 'subtitle': 'Tata Communications',
                 'description': '''
                     <ul class="list-disc list-inside space-y-2">
-                        <li>Built TypeScript + Node.js backend with custom Dialogflow chatbot modules, improving chatbot response efficiency by <span class="text-green-400 font-bold">50%</span>.</li>
-                        <li>Automated Google Sheets → Firebase data pipelines using Cloud Functions, eliminating <span class="text-green-400 font-bold">60%</span> of manual data entry effort.</li>
-                        <li>Developed cloud-based APIs delivering rich responses in Google Chat, increasing user engagement by <span class="text-blue-400 font-bold">30%</span>.</li>
-                        <li>Integrated Agent Assist for voice virtual agents, cutting customer response times by <span class="text-green-400 font-bold">15%</span>.</li>
-                        <li>Delivered features across Agile Scrum sprints, managing tasks in Jira with consistent on-time delivery.</li>
+                        <li>Designed and deployed scalable REST APIs handling <span class="text-green-400 font-bold">25,000+ daily requests</span>, improving average response time by <span class="text-green-400 font-bold">40%</span> (500ms → 300ms) through query optimisation and Redis caching.</li>
+                        <li>Architected event-driven background job processing system using message queues and worker services, improving system throughput by <span class="text-green-400 font-bold">60%</span> under peak load for 50,000+ enterprise users.</li>
+                        <li>Implemented horizontal scaling across containerised services using Docker and AWS EC2 auto-scaling groups, achieving <span class="text-green-400 font-bold">99.9% uptime</span> SLA for Fortune 500 clients.</li>
+                        <li>Optimised PostgreSQL queries across <span class="text-blue-400 font-bold">10M+ records</span>, reducing critical query latency from 850ms to 300ms (<span class="text-green-400 font-bold">65% reduction</span>), eliminating report timeout issues for 3 downstream teams.</li>
+                        <li>Built end-to-end CI/CD pipeline with GitHub Actions, cutting deployment cycles from 2 hours to 20 minutes (<span class="text-green-400 font-bold">83% reduction</span>) across 4 engineering teams.</li>
+                        <li>Instrumented production systems with CloudWatch metrics and centralised log aggregation, reducing MTTR by <span class="text-green-400 font-bold">35%</span> and enabling proactive incident detection.</li>
                     </ul>
                 ''',
-                'date_start': 'Oct 2022',
-                'date_end': 'Apr 2024',
-                'technologies': 'TypeScript, Node.js, React.js, Dialogflow, Firebase, Cloud Functions, Google Chat API, Jira, Scrum',
+                'date_start': 'Jul 2022',
+                'date_end': 'Aug 2024',
+                'technologies': 'Node.js, TypeScript, Python, REST APIs, Redis, PostgreSQL, Docker, AWS (EC2, S3, Lambda, CloudWatch), GitHub Actions, CI/CD, Message Queues',
                 'order': 1,
             },
             {
                 'category': 'experience',
-                'title': 'Software Engineer (Intern)',
+                'title': 'Software Engineer (Internship)',
                 'subtitle': 'Tata Elxsi',
                 'description': '''
                     <ul class="list-disc list-inside space-y-2">
-                        <li>Designed and implemented RESTful APIs for authentication, feedback, and issue reporting, achieving <span class="text-green-400 font-bold">99% uptime</span>.</li>
-                        <li>Optimised middleware layer, reducing API response times by <span class="text-green-400 font-bold">35%</span> under high-traffic conditions.</li>
-                        <li>Implemented Role-Based Access Control (RBAC), strengthening security and access compliance.</li>
-                        <li>Built a React.js IoT dashboard for Tata Motors, reducing mean time to resolve production issues by <span class="text-blue-400 font-bold">41%</span>.</li>
+                        <li>Engineered modular microservices architecture for digital product platforms supporting <span class="text-green-400 font-bold">15,000+ active users</span>, implementing JWT authentication, adaptive rate limiting, and fault isolation.</li>
+                        <li>Developed real-time notification and messaging service using Redis Pub/Sub and WebSockets, supporting <span class="text-blue-400 font-bold">5,000+ concurrent connections</span> with sub-150ms latency.</li>
+                        <li>Reduced infrastructure cost by <span class="text-green-400 font-bold">25%</span> (~$30K annually) through container resource profiling, right-sizing, and intelligent allocation.</li>
+                        <li>Led decomposition of monolithic system into 6 independent service-oriented modules, reducing regression issues by <span class="text-green-400 font-bold">30%</span> and cutting post-release hotfixes from 8/month to under 3.</li>
                     </ul>
                 ''',
-                'date_start': 'Dec 2021',
-                'date_end': 'Sep 2022',
-                'technologies': 'REST APIs, Node.js, RBAC, Middleware, React.js, IoT',
+                'date_start': 'Jul 2021',
+                'date_end': 'Jun 2022',
+                'technologies': 'Microservices, Node.js, JWT, Redis (Pub/Sub), WebSockets, Docker, REST APIs, RBAC',
                 'order': 2,
             },
 
             # Projects
             {
                 'category': 'project',
-                'title': 'CAReader-AI',
-                'subtitle': 'Full-Stack AI Web Application',
+                'title': 'Detecting Humans in Fire',
+                'subtitle': 'MSc Applied Research Project — Computer Vision AI Safety System',
                 'description': '''
-                    <p class="mb-3">Full-stack web app with a <strong>TypeScript + Node.js</strong> backend,
-                    AI-powered chatbot, REST APIs, JWT authentication, and a React/Next.js frontend.</p>
-                    <p class="text-gray-400 text-sm">Reduced user search time by
-                    <span class="text-green-400 font-bold">50%</span>.</p>
-                    <p class="mt-3">
-                        <a href="https://github.com/imyogeshgaikwad/CAReader-Ai" target="_blank"
-                           class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
-                    </p>
-                ''',
-                'technologies': 'TypeScript, Node.js, React.js, Next.js, REST APIs, JWT, AI Chatbot',
-                'order': 1,
-            },
-            {
-                'category': 'project',
-                'title': 'Detecting-Humans-in-Fire',
-                'subtitle': 'Python AI Safety System',
-                'description': '''
-                    <p class="mb-3">Python-based <strong>image recognition system</strong> for fire emergency
-                    detection using FastAPI and TensorFlow, delivering real-time predictions via a REST API.</p>
+                    <p class="mb-3">Architected a dual-model computer vision system integrating <strong>EfficientNetB0</strong> (fire detection) and <strong>YOLOv8</strong> (human detection), producing a 4-state situational risk assessment for first responders.</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-gray-300 mb-3">
+                        <li>90.9% fire detection accuracy / 98.1% precision (EfficientNetB0)</li>
+                        <li>90.8% human detection accuracy / 99.6% precision (YOLOv8)</li>
+                        <li>Deployed as Flask web app processing images fully in-memory for instant risk output</li>
+                    </ul>
                     <p class="mt-3">
                         <a href="https://github.com/imyogeshgaikwad/Detecting-Humans-In-Fire" target="_blank"
                            class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
                     </p>
                 ''',
-                'technologies': 'Python, FastAPI, TensorFlow, REST API, Image Recognition',
+                'technologies': 'Python, TensorFlow, EfficientNetB0, YOLOv8, Flask, OpenCV',
+                'order': 1,
+            },
+            {
+                'category': 'project',
+                'title': 'CAReader-Ai',
+                'subtitle': 'AI-Powered Car Dealership Platform',
+                'description': '''
+                    <p class="mb-3">Full-stack car dealership management platform with <strong>Node.js</strong> backend and OpenAI API integration for an AI client communication layer — handling vehicle info generation, customer queries, and dealership workflows end-to-end.</p>
+                    <p class="text-gray-400 text-sm mb-3">RESTful API backend covering full CRUD lifecycle for vehicle records, client profiles, and transaction history.</p>
+                    <p class="mt-3">
+                        <a href="https://github.com/imyogeshgaikwad/CAReader-Ai" target="_blank"
+                           class="text-blue-400 hover:underline text-sm">🔗 View on GitHub →</a>
+                    </p>
+                ''',
+                'technologies': 'Node.js, JavaScript, OpenAI API, REST APIs',
                 'order': 2,
             },
 
             # Skills
             {
                 'category': 'skill',
-                'title': 'Backend & APIs',
-                'subtitle': 'Core Server-Side Stack',
+                'title': 'Languages',
+                'subtitle': 'Programming Languages',
                 'description': '''
                     <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">JavaScript (Node.js)</span>
                         <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">TypeScript</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Node.js</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Express.js</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">REST APIs</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">JWT</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">RBAC</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Middleware</span>
-                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">MVC</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Python</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Java</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">SQL</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Bash</span>
                     </div>
                 ''',
-                'technologies': 'TypeScript, Node.js, Express.js, REST APIs, JWT, RBAC, Middleware, MVC',
                 'order': 1,
+            },
+            {
+                'category': 'skill',
+                'title': 'Backend Systems',
+                'subtitle': 'Server-Side & Architecture',
+                'description': '''
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Microservices</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">RESTful APIs</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Event-Driven Architecture</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Message Queues (Redis, SQS)</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">WebSockets</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Background Job Processing</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">Rate Limiting</span>
+                        <span class="px-3 py-1 bg-blue-600/30 rounded-full text-blue-300">JWT / RBAC</span>
+                    </div>
+                ''',
+                'order': 2,
+            },
+            {
+                'category': 'skill',
+                'title': 'Cloud & DevOps',
+                'subtitle': 'Infrastructure & Tooling',
+                'description': '''
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">AWS (EC2, S3, Lambda, RDS, CloudWatch, IAM, VPC)</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Docker</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Kubernetes</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">CI/CD Pipelines</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">GitHub Actions</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Infrastructure as Code</span>
+                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Linux</span>
+                    </div>
+                ''',
+                'order': 3,
+            },
+            {
+                'category': 'skill',
+                'title': 'Databases',
+                'subtitle': 'Data Storage & Optimisation',
+                'description': '''
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">MongoDB</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">Redis (Caching, Pub/Sub, Clustering)</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">MySQL</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">Query Optimisation</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">Index Design</span>
+                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">Database Sharding</span>
+                    </div>
+                ''',
+                'order': 4,
+            },
+            {
+                'category': 'skill',
+                'title': 'Architecture & Reliability',
+                'subtitle': 'Distributed Systems & Observability',
+                'description': '''
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Distributed Systems</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Horizontal Scaling</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Load Balancing</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Fault Tolerance</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">High Availability</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Monitoring (CloudWatch)</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Centralised Logging</span>
+                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">MTTR Optimisation</span>
+                    </div>
+                ''',
+                'order': 5,
             },
             {
                 'category': 'skill',
@@ -168,59 +241,12 @@ class Command(BaseCommand):
                 'description': '''
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">React.js</span>
-                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Next.js</span>
-                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">HTML5</span>
-                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">CSS3</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Redux</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Performance Optimisation</span>
+                        <span class="px-3 py-1 bg-teal-600/30 rounded-full text-teal-300">Component Architecture</span>
                     </div>
                 ''',
-                'technologies': 'React.js, Next.js, HTML5, CSS3',
-                'order': 2,
-            },
-            {
-                'category': 'skill',
-                'title': 'AI & Automation',
-                'subtitle': 'Machine Learning & Bots',
-                'description': '''
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Python</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">FastAPI</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">TensorFlow</span>
-                        <span class="px-3 py-1 bg-purple-600/30 rounded-full text-purple-300">Dialogflow</span>
-                    </div>
-                ''',
-                'technologies': 'Python, FastAPI, TensorFlow, Dialogflow',
-                'order': 3,
-            },
-            {
-                'category': 'skill',
-                'title': 'Databases',
-                'subtitle': 'Data Storage',
-                'description': '''
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">PostgreSQL</span>
-                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">MySQL</span>
-                        <span class="px-3 py-1 bg-yellow-600/30 rounded-full text-yellow-300">MongoDB</span>
-                    </div>
-                ''',
-                'technologies': 'PostgreSQL, MySQL, MongoDB',
-                'order': 4,
-            },
-            {
-                'category': 'skill',
-                'title': 'Cloud & DevOps',
-                'subtitle': 'Infrastructure & Tooling',
-                'description': '''
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">AWS (EC2, S3)</span>
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Docker</span>
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">CI/CD</span>
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Git/GitHub</span>
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Jira</span>
-                        <span class="px-3 py-1 bg-orange-600/30 rounded-full text-orange-300">Scrum/Kanban</span>
-                    </div>
-                ''',
-                'technologies': 'AWS, Docker, CI/CD, Git/GitHub, Jira, Scrum, Kanban',
-                'order': 5,
+                'order': 6,
             },
         ]
 

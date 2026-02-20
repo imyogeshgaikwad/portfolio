@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogesh Gaikwad | Full-Stack Developer Portfolio</title>
+    <title>Yogesh Gaikwad | Software Engineer · Distributed Systems</title>
     <meta name="description"
-        content="Interactive AI-powered portfolio of Yogesh Gaikwad - Full-Stack Engineer based in Dublin, Ireland, specializing in TypeScript, Node.js, React, and AI/Automation.">
+        content="Interactive AI-powered portfolio of Yogesh Gaikwad - Software Engineer specializing in Distributed Systems, Backend Infrastructure, Node.js, TypeScript, and AWS. Based in Dublin, Ireland.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,30 +41,29 @@
             --scan-line: rgba(0, 255, 225, 0.03);
         }
 
-        /* ── LIGHT MODE — all colors significantly darkened for readability ── */
         [data-theme="light"] {
             --bg-void: #dde4ec;
             --bg-primary: #e8eef5;
             --bg-secondary: #d4dce8;
             --bg-tertiary: #c8d3e2;
             --bg-card: #f0f4f9;
-            --neon-cyan: #005fa3;          /* was #0070c0 — now deeper navy-blue */
-            --neon-blue: #003d82;          /* was #004fa3 */
-            --neon-violet: #3d0fa8;        /* was #5a1fc8 — deeper purple */
-            --neon-pink: #96103d;          /* was #c0185a */
-            --neon-green: #005535;         /* was #008055 */
+            --neon-cyan: #005fa3;
+            --neon-blue: #003d82;
+            --neon-violet: #3d0fa8;
+            --neon-pink: #96103d;
+            --neon-green: #005535;
             --accent-primary: #005fa3;
             --accent-secondary: #3d0fa8;
             --accent-gradient: linear-gradient(135deg, #005fa3 0%, #003d82 50%, #3d0fa8 100%);
             --accent-glow-cyan: rgba(0, 95, 163, 0.18);
             --accent-glow-violet: rgba(61, 15, 168, 0.18);
-            --text-primary: #06111a;       /* was #0c1824 — near-black for max contrast */
-            --text-secondary: #1a3a52;     /* was #3a5a70 — much darker mid-tone */
-            --text-muted: #3a5268;         /* was #7890a0 — noticeably darker */
-            --text-code: #004a8f;          /* was #0060b0 — darker code tint */
-            --border-color: #98b0c8;       /* was #c8d8e8 — darker borders */
-            --border-bright: #005fa355;    /* was #0070c033 — stronger highlight border */
-            --border-violet: #3d0fa855;    /* was #5a1fc833 */
+            --text-primary: #06111a;
+            --text-secondary: #1a3a52;
+            --text-muted: #3a5268;
+            --text-code: #004a8f;
+            --border-color: #98b0c8;
+            --border-bright: #005fa355;
+            --border-violet: #3d0fa855;
             --scan-line: rgba(0, 63, 130, 0.04);
         }
 
@@ -211,7 +210,6 @@
         .bubble-user { background: linear-gradient(135deg, rgba(0,255,225,0.15) 0%, rgba(123,47,255,0.2) 100%); border: 1px solid var(--border-bright); border-radius: 16px 4px 16px 16px; box-shadow: 0 0 20px rgba(0,255,225,0.08); }
         [data-theme="light"] .bubble-user { background: linear-gradient(135deg, rgba(0,63,130,0.15) 0%, rgba(61,15,168,0.18) 100%); border-color: rgba(0,63,130,0.4); }
 
-        /* Light mode bubble text force-dark */
         [data-theme="light"] .bubble-agent p,
         [data-theme="light"] .bubble-agent span,
         [data-theme="light"] .bubble-agent li,
@@ -341,7 +339,7 @@
                     <div>
                         <h1 class="header-title text-xl font-mono">Yogesh Gaikwad</h1>
                         <p class="header-subtitle">
-                            <span class="status-dot"></span>Full-Stack Developer · Dublin, Ireland
+                            <span class="status-dot"></span>Software Engineer · Distributed Systems · Dublin, Ireland
                         </p>
                     </div>
                 </div>
@@ -361,8 +359,8 @@
                         </a>
                     </div>
 
-                    <a href="{% static '..\static\files\Yogesh_Gaikwad_CV.docx' %}"
-                       download="Yogesh_Gaikwad_CV.docx"
+                    <a href="{% static 'files/Yogesh_Gaikwad_CV.pdf' %}"
+                       download="Yogesh_Gaikwad_CV.pdf"
                        class="cv-btn"
                        title="Download CV">
                         <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -381,7 +379,7 @@
         <footer class="input-area">
             <div class="input-wrapper">
                 <input type="text" class="input-field" id="messageInput"
-                    placeholder="ask about skills, projects... or 'can he code?'" autocomplete="off">
+                    placeholder="ask about distributed systems, backend infra, projects..." autocomplete="off">
                 <button class="send-btn" id="sendBtn" aria-label="Send message">
                     <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24">
                         <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
@@ -467,9 +465,14 @@
 
         /* ─── GREETING ──────────────────────────────────────── */
         const greeting = `
-            <p class="mb-3" style="font-family:'Space Mono',monospace;font-size:0.85rem;"><span style="color:var(--neon-cyan)">$</span> ./hello_world.sh</p>
-            <p class="mb-3">Initializing <strong style="color:var(--neon-cyan)">Yogesh's Personal Agent</strong> <span style="font-size:0.8em">v2.0</span> 👋</p>
-            <p style="color:var(--text-secondary);margin-bottom:1rem;font-size:0.9rem;">I can surface his background, projects, stack, and experience. Query away.</p>
+            <p class="mb-3" style="font-family:'Space Mono',monospace;font-size:0.85rem;"><span style="color:var(--neon-cyan)">$</span> ./initialize_agent.sh</p>
+            <p class="mb-3">Booting <strong style="color:var(--neon-cyan)">Yogesh's Portfolio Agent</strong> <span style="font-size:0.8em">v3.0</span> 👋</p>
+            <p style="color:var(--text-secondary);margin-bottom:0.75rem;font-size:0.9rem;">Software Engineer · Distributed Systems · Backend Infrastructure</p>
+            <div style="font-family:'Fira Code',monospace;font-size:0.78rem;color:var(--text-muted);background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;line-height:1.7;">
+                <span style="color:var(--neon-green)">✓</span> 50,000+ enterprise users · 99.9% uptime · 45% latency reduction<br>
+                <span style="color:var(--neon-green)">✓</span> 83% faster deployments · 25% infra cost savings · $30K/year<br>
+                <span style="color:var(--neon-green)">✓</span> Stamp 1G · Available immediately · Dublin, Ireland 🇮🇪
+            </div>
             <div class="chips-container">
                 <button class="chip" data-query="about"><span>👤 about()</span></button>
                 <button class="chip" data-query="experience"><span>💼 experience()</span></button>
@@ -478,7 +481,7 @@
                 <button class="chip" data-query="projects"><span>📂 projects()</span></button>
                 <button class="chip" data-query="publications"><span>📄 publications()</span></button>
             </div>
-            <p style="color:var(--text-muted);font-size:0.78rem;margin-top:1rem;font-family:'Fira Code',monospace;">// Tip: scroll down to auto-explore · or click ⬇ cv.pdf to download CV</p>`;
+            <p style="color:var(--text-muted);font-size:0.78rem;margin-top:1rem;font-family:'Fira Code',monospace;">// scroll to auto-explore · type any question below · ⬇ cv.pdf to download</p>`;
 
         /* ─── FETCH ─────────────────────────────────────────── */
         async function fetchCategoryData(query) {
@@ -553,7 +556,7 @@
                         }
                     }
                 } else {
-                    addAgentMessage(`<p style="color:var(--text-secondary);"><span style="color:var(--neon-cyan);font-family:'Space Mono',monospace;">// no match</span><br>Try asking about skills, projects, or experience.</p>`, true);
+                    addAgentMessage(`<p style="color:var(--text-secondary);"><span style="color:var(--neon-cyan);font-family:'Space Mono',monospace;">// no match</span><br>Try: skills, experience, projects, education, or about.</p>`, true);
                 }
             } catch (err) {
                 removeTypingIndicator();

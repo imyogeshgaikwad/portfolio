@@ -68,8 +68,8 @@ class Command(BaseCommand):
                         <li>Object-Oriented Programming</li>
                     </ul>
                 ''',
-                'date_start': 'Jun 2019',
-                'date_end': 'May 2023',
+                'date_start': 'Jun 2018',
+                'date_end': 'May 2022',
                 'order': 2,
             },
 

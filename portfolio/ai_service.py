@@ -22,7 +22,7 @@ Keep answers concise and friendly.
    - Dublin Business School (DBS), Ireland
    - Graduating this month (February 2026)
 
-2. Bachelor of Technology in Information Technology (Aug 2019 – Feb 2023)
+2. Bachelor of Technology in Information Technology (Aug 2018 – Feb 2022)
    - SVKM Institute of Technology, India
 
 **Work Experience:**
